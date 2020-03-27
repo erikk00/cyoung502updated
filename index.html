@@ -1,24 +1,24 @@
-<html>
+﻿<html>
 
 <head>
     <meta charset="utf-8">
     <title>Idle Heroes: Prophet Orb Simulator: by Zobris</title>
     <meta name="description"
-        content="A Prophet Orb Simulator written by Zobris for the popular mobile game Idle Heroes by DH Games.">
+          content="A Prophet Orb Simulator written by Zobris for the popular mobile game Idle Heroes by DH Games.">
     <meta name="keywords"
-        content="Idle, Heroes, Idle Heroes, DH, Games, DH Games, DHGames, Prophet, Orb, Simulator, Prophet Orb Simulator, PO, RNG, Zobris, Samogot">
+          content="Idle, Heroes, Idle Heroes, DH, Games, DH Games, DHGames, Prophet, Orb, Simulator, Prophet Orb Simulator, PO, RNG, Zobris, Samogot">
     <link rel="icon" type="image/png" href="images/2101.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145254282-1"></script>
 <script>
@@ -33,6 +33,7 @@
 </script>
 
 <script>
+
     var heros = [
         /*-------------------------------------------------------------------------------------------------------------
             SHADOW
@@ -41,157 +42,188 @@
             name: "Grumpy Corpse 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0531.png"
+            image: "images/hero/shadow/0531.png",
+            order: 4
         }, {
             name: "Cbagbo 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0541.png"
+            image: "images/hero/shadow/0541.png",
+            order: 4
         }, {
             name: "Bonecarver 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0551.png"
+            image: "images/hero/shadow/0551.png",
+            order: 4
         }, {
             name: "Glen 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0561.png"
+            image: "images/hero/shadow/0561.png",
+            order: 4
         }, {
             name: "Nightmare Knight 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0571.png"
+            image: "images/hero/shadow/0571.png",
+            order: 4
         }, {
             name: "Bone General 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/0581.png"
+            image: "images/hero/shadow/0581.png",
+            order: 4
         }, {
             name: "Lamb 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/1271.png"
+            image: "images/hero/shadow/1271.png",
+            order: 4
         }, {
             name: "Deathsworn 4*",
             faction: "Shadow",
             probability: 0.075,
-            image: "images/hero/shadow/1281.png"
+            image: "images/hero/shadow/1281.png",
+            order: 4
         }, {
             name: "Kharma",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0811.png"
+            image: "images/hero/shadow/0811.png",
+            order: 2
         }, {
             name: "Blood Blade",
             faction: "Shadow",
             probability: 0.00233,
-            image: "images/hero/shadow/0821.png"
+            image: "images/hero/shadow/0821.png",
+            order: 2
         }, {
             name: "Dominator",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0831.png"
+            image: "images/hero/shadow/0831.png",
+            order: 2
         }, {
             name: "Lutz",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0841.png"
+            image: "images/hero/shadow/0841.png",
+            order: 2
         }, {
             name: "Field",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0851.png"
+            image: "images/hero/shadow/0851.png",
+            order: 2
         }, {
             name: "Corpsedemon",
             faction: "Shadow",
             probability: 0.00233,
-            image: "images/hero/shadow/0861.png"
+            image: "images/hero/shadow/0861.png",
+            order: 2
         }, {
             name: "Baade",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0871.png"
+            image: "images/hero/shadow/0871.png",
+            order: 0
         }, {
             name: "Kamath",
             faction: "Shadow",
             probability: 0.00233,
-            image: "images/hero/shadow/0881.png"
+            image: "images/hero/shadow/0881.png",
+            order: 2
         }, {
             name: "Aidan",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0891.png"
+            image: "images/hero/shadow/0891.png",
+            order: 2
         }, {
             name: "Walter",
             faction: "Shadow",
             probability: 0.004,
-            image: "images/hero/shadow/0901.png"
+            image: "images/hero/shadow/0901.png",
+            order: 2
         }, {
             name: "Jahra",
             faction: "Shadow",
             probability: 0.00233,
-            image: "images/hero/shadow/1431.png"
+            image: "images/hero/shadow/1431.png",
+            order: 1
         }, {
             name: "Horus",
             faction: "Shadow",
             probability: 0.00234,
-            image: "images/hero/shadow/1491.png"
+            image: "images/hero/shadow/1491.png",
+            order: 1
         }, {
             name: "Gustin",
             faction: "Shadow",
             probability: 0.00234,
-            image: "images/hero/shadow/1581.png"
+            image: "images/hero/shadow/1581.png",
+            order: 1
         }, {
             name: "Grumpy Corpse 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0532.png"
+            image: "images/hero/shadow/0532.png",
+            order: 3
         }, {
             name: "Cbagbo 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0542.png"
+            image: "images/hero/shadow/0542.png",
+            order: 3
         }, {
             name: "Bonecarver 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0552.png"
+            image: "images/hero/shadow/0552.png",
+            order: 3
         }, {
             name: "Glen 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0562.png"
+            image: "images/hero/shadow/0562.png",
+            order: 3
         }, {
             name: "Nightmare Knight 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0572.png"
+            image: "images/hero/shadow/0572.png",
+            order: 3
         }, {
             name: "Bone General 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/0582.png"
+            image: "images/hero/shadow/0582.png",
+            order: 3
         }, {
             name: "Lamb 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/1272.png"
+            image: "images/hero/shadow/1272.png",
+            order: 3
         }, {
             name: "Deathsworn 5*",
             faction: "Shadow",
             probability: 0.006,
-            image: "images/hero/shadow/1282.png"
+            image: "images/hero/shadow/1282.png",
+            order: 3
         }, {
             name: "Shards Shadow 4*",
             faction: "Shadow",
             probability: 0.07,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 5
         }, {
             name: "Shards Shadow 5*",
             faction: "Shadow",
             probability: 0.24,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 6
         },
         /*-------------------------------------------------------------------------------------------------------------
             FOREST
@@ -200,162 +232,194 @@
             name: "Wind Walker 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0711.png"
+            image: "images/hero/forest/0711.png",
+            order: 4
         }, {
             name: "Chief 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0721.png"
+            image: "images/hero/forest/0721.png",
+            order: 4
         }, {
             name: "Ent Elder 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0731.png"
+            image: "images/hero/forest/0731.png",
+            order: 4
         }, {
             name: "Headstriker 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0741.png"
+            image: "images/hero/forest/0741.png",
+            order: 4
         }, {
             name: "Thale 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0751.png"
+            image: "images/hero/forest/0751.png",
+            order: 4
         }, {
             name: "Kargath 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/0761.png"
+            image: "images/hero/forest/0761.png",
+            order: 4
         }, {
             name: "The Grey-eyed 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/1331.png"
+            image: "images/hero/forest/1331.png",
+            order: 4
         }, {
             name: "Zekkis 4*",
             faction: "Forest",
             probability: 0.075,
-            image: "images/hero/forest/1341.png"
+            image: "images/hero/forest/1341.png",
+            order: 4
         }, {
             name: "Demon Hunter",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1111.png"
+            image: "images/hero/forest/1111.png",
+            order: 2
         }, {
             name: "Dragon Slayer",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1121.png"
+            image: "images/hero/forest/1121.png",
+            order: 2
         }, {
             name: "Faceless",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1131.png"
+            image: "images/hero/forest/1131.png",
+            order: 2
         }, {
             name: "Rosa",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1141.png"
+            image: "images/hero/forest/1141.png",
+            order: 2
         }, {
             name: "Starlight",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1151.png"
+            image: "images/hero/forest/1151.png",
+            order: 2
         }, {
             name: "Groo",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1161.png"
+            image: "images/hero/forest/1161.png",
+            order: 2
         }, {
             name: "Eddga",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1171.png"
+            image: "images/hero/forest/1171.png",
+            order: 2
         }, {
             name: "Vesa",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1181.png"
+            image: "images/hero/forest/1181.png",
+            order: 2
         }, {
             name: "Malassa",
             faction: "Forest",
             probability: 0.004,
-            image: "images/hero/forest/1191.png"
+            image: "images/hero/forest/1191.png",
+            order: 2
         }, {
             name: "Heart Watcher",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1201.png"
+            image: "images/hero/forest/1201.png",
+            order: 1
         }, {
             name: "Valkyrie",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1451.png"
+            image: "images/hero/forest/1451.png",
+            order: 1
         }, {
             name: "Oberon",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1541.png"
+            image: "images/hero/forest/1541.png",
+            order: 1
         }, {
             name: "Garuda",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1591.png"
+            image: "images/hero/forest/1591.png",
+            order: 1
         }, {
             name: "Elyvia",
             faction: "Forest",
             probability: 0.002,
-            image: "images/hero/forest/1643.png"
+            image: "images/hero/forest/1643.png",
+            order: 1
         }, {
 			name: "Wind Walker 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0712.png"
+            image: "images/hero/forest/0712.png",
+            order: 3
         }, {
             name: "Chief 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0722.png"
+            image: "images/hero/forest/0722.png",
+            order: 3
         }, {
             name: "Ent Elder 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0732.png"
+            image: "images/hero/forest/0732.png",
+            order: 3
         }, {
             name: "Headstriker 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0742.png"
+            image: "images/hero/forest/0742.png",
+            order: 3
         }, {
             name: "Thale 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0752.png"
+            image: "images/hero/forest/0752.png",
+            order: 3
         }, {
             name: "Kargath 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/0762.png"
+            image: "images/hero/forest/0762.png",
+            order: 3
         }, {
             name: "The Grey-eyed 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/1332.png"
+            image: "images/hero/forest/1332.png",
+            order: 3
         }, {
             name: "Zekkis 5*",
             faction: "Forest",
             probability: 0.006,
-            image: "images/hero/forest/1342.png"
+            image: "images/hero/forest/1342.png",
+            order: 3
         }, {
             name: "Shards Forest 5*",
             faction: "Forest",
             probability: 0.24,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 5
         }, {
             name: "Shards Forest 4*",
             faction: "Forest",
             probability: 0.07,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 6
         },
         /*-------------------------------------------------------------------------------------------------------------
             FORTRESS
@@ -364,112 +428,140 @@
             name: "Shards Fortress 4*",
             faction: "Fortress",
             probability: 0.07,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 6
         }, {
             name: "Shards Fortress 5*",
             faction: "Fortress",
             probability: 0.24,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 5
         }, {
             name: "Time Mage 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0591.png"
+            image: "images/hero/fortress/0591.png",
+            order: 4
         }, {
             name: "Storm Hudde 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0601.png"
+            image: "images/hero/fortress/0601.png",
+            order: 4
         }, {
             name: "Roy 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0611.png"
+            image: "images/hero/fortress/0611.png",
+            order: 4
         }, {
             name: "Sierra 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0621.png"
+            image: "images/hero/fortress/0621.png",
+            order: 4
         }, {
             name: "Liquor 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0631.png"
+            image: "images/hero/fortress/0631.png",
+            order: 4
         }, {
             name: "LM-02 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/0641.png"
+            image: "images/hero/fortress/0641.png",
+            order: 4
         }, {
             name: "Iron Bambi 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/1291.png"
+            image: "images/hero/fortress/1291.png",
+            order: 4
         }, {
             name: "Kristian 4*",
             faction: "Fortress",
             probability: 0.075,
-            image: "images/hero/fortress/1301.png"
+            image: "images/hero/fortress/1301.png",
+            order: 4
         }, {
             name: "Emily",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0911.png"
+            image: "images/hero/fortress/0911.png",
+            order: 2
+        }, {
+            name: "Ormus",
+            faction: "Fortress",
+            probability: 0.0024,
+            image: "images/hero/fortress/0921.png",
+            order: 1
         }, {
             name: "Honor Guard",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0931.png"
+            image: "images/hero/fortress/0931.png",
+            order: 2
         }, {
             name: "Flame Strike",
             faction: "Fortress",
             probability: 0.002,
-            image: "images/hero/fortress/0941.png"
+            image: "images/hero/fortress/0941.png",
+            order: 2
         }, {
             name: "Iceblink",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0951.png"
+            image: "images/hero/fortress/0951.png",
+            order: 2
         }, {
             name: "Blecker",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0961.png"
+            image: "images/hero/fortress/0961.png",
+            order: 2
         }, {
             name: "Sigmund",
             faction: "Fortress",
             probability: 0.002,
-            image: "images/hero/fortress/0971.png"
+            image: "images/hero/fortress/0971.png",
+            order: 1
         }, {
             name: "Mirage",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0981.png"
+            image: "images/hero/fortress/0981.png",
+            order: 2
         }, {
             name: "Miki",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/0991.png"
+            image: "images/hero/fortress/0991.png",
+            order: 2
         }, {
             name: "OD-01",
             faction: "Fortress",
             probability: 0.004,
-            image: "images/hero/fortress/1001.png"
+            image: "images/hero/fortress/1001.png",
+            order: 2
         }, {
             name: "Valentino",
             faction: "Fortress",
             probability: 0.002,
-            image: "images/hero/fortress/1421.png"
+            image: "images/hero/fortress/1421.png",
+            order: 1
         }, {
             name: "Xia",
             faction: "Fortress",
             probability: 0.002,
-            image: "images/hero/fortress/1461.png"
+            image: "images/hero/fortress/1461.png",
+            order: 1
         }, {
             name: "Penny",
             faction: "Fortress",
             probability: 0.002,
-            image: "images/hero/fortress/1551.png"
+            image: "images/hero/fortress/1551.png",
+            order: 1
         }, {
             name: "Ormus",
             faction: "Fortress",
@@ -484,42 +576,50 @@
             name: "Time Mage 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0592.png"
+            image: "images/hero/fortress/0592.png",
+            order: 3
         }, {
             name: "Storm Hudde 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0602.png"
+            image: "images/hero/fortress/0602.png",
+            order: 3
         }, {
             name: "Roy 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0612.png"
+            image: "images/hero/fortress/0612.png",
+            order: 3
         }, {
             name: "Sierra 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0622.png"
+            image: "images/hero/fortress/0622.png",
+            order: 3
         }, {
             name: "Liquor 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0632.png"
+            image: "images/hero/fortress/0632.png",
+            order: 3
         }, {
             name: "LM-02 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/0642.png"
+            image: "images/hero/fortress/0642.png",
+            order: 3
         }, {
             name: "Iron Bambi 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/1292.png"
+            image: "images/hero/fortress/1292.png",
+            order: 3
         }, {
             name: "Kristian 5*",
             faction: "Fortress",
             probability: 0.006,
-            image: "images/hero/fortress/1302.png"
+            image: "images/hero/fortress/1302.png",
+            order: 3
         },
         /*-------------------------------------------------------------------------------------------------------------
             ABYSS
@@ -528,62 +628,74 @@
             name: "Shards Abyss 5*",
             faction: "Abyss",
             probability: 0.24,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 5
         }, {
             name: "Shards Abyss 4*",
             faction: "Abyss",
             probability: 0.07,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 6
         }, {
             name: "Rogge 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0651.png"
+            image: "images/hero/abyss/0651.png",
+            order: 4
         }, {
             name: "Destroyer 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0661.png"
+            image: "images/hero/abyss/0661.png",
+            order: 4
         }, {
             name: "Tanner 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0671.png"
+            image: "images/hero/abyss/0671.png",
+            order: 4
         }, {
             name: "Akasha 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0681.png"
+            image: "images/hero/abyss/0681.png",
+            order: 4
         }, {
             name: "Lemegeton 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0691.png"
+            image: "images/hero/abyss/0691.png",
+            order: 4
         }, {
             name: "Aleria 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/0701.png"
+            image: "images/hero/abyss/0701.png",
+            order: 4
         }, {
             name: "Norma 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/1311.png"
+            image: "images/hero/abyss/1311.png",
+            order: 4
         }, {
             name: "Immolatus 4*",
             faction: "Abyss",
             probability: 0.075,
-            image: "images/hero/abyss/1321.png"
+            image: "images/hero/abyss/1321.png",
+            order: 4
         }, {
             name: "Skerei",
             faction: "Abyss",
             probability: 0.0024,
-            image: "images/hero/abyss/1011.png"
+            image: "images/hero/abyss/1011.png",
+            order: 1
         }, {
             name: "Dantalian",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1021.png"
+            image: "images/hero/abyss/1021.png",
+            order: 2
         }, {
             name: "Margaret",
             faction: "Abyss",
@@ -593,92 +705,110 @@
             name: "Barea",
             faction: "Abyss",
             probability: 0.0023,
-            image: "images/hero/abyss/1041.png"
+            image: "images/hero/abyss/1041.png",
+            order: 2
         }, {
             name: "Queen",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1051.png"
+            image: "images/hero/abyss/1051.png",
+            order: 2
         }, {
             name: "Lord Balrog",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1061.png"
+            image: "images/hero/abyss/1061.png",
+            order: 2
         }, {
             name: "King Barton",
             faction: "Abyss",
             probability: 0.0023,
-            image: "images/hero/abyss/1071.png"
+            image: "images/hero/abyss/1071.png",
+            order: 2
         }, {
             name: "Fat Mu",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1081.png"
+            image: "images/hero/abyss/1081.png",
+            order: 2
         }, {
             name: "Gusta",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1091.png"
+            image: "images/hero/abyss/1091.png",
+            order: 2
         }, {
             name: "Karim",
             faction: "Abyss",
             probability: 0.004,
-            image: "images/hero/abyss/1101.png"
+            image: "images/hero/abyss/1101.png",
+            order: 2
         }, {
             name: "Kroos",
             faction: "Abyss",
             probability: 0.0023,
-            image: "images/hero/abyss/1411.png"
+            image: "images/hero/abyss/1411.png",
+            order: 1
         }, {
             name: "Cthugha",
             faction: "Abyss",
             probability: 0.0023,
-            image: "images/hero/abyss/1481.png"
+            image: "images/hero/abyss/1481.png",
+            order: 1
         }, {
             name: "Nakia",
             faction: "Abyss",
             probability: 0.0024,
-            image: "images/hero/abyss/1571.png"
+            image: "images/hero/abyss/1571.png",
+            order: 1
         }, {
             name: "Rogge 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0652.png"
+            image: "images/hero/abyss/0652.png",
+            order: 3
         }, {
             name: "Destroyer 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0662.png"
+            image: "images/hero/abyss/0662.png",
+            order: 3
         }, {
             name: "Tanner 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0672.png"
+            image: "images/hero/abyss/0672.png",
+            order: 3
         }, {
             name: "Akasha 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0682.png"
+            image: "images/hero/abyss/0682.png",
+            order: 3
         }, {
             name: "Lemegeton 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0692.png"
+            image: "images/hero/abyss/0692.png",
+            order: 3
         }, {
             name: "Aleria 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/0702.png"
+            image: "images/hero/abyss/0702.png",
+            order: 3
         }, {
             name: "Norma 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/1312.png"
+            image: "images/hero/abyss/1312.png",
+            order: 3
         }, {
             name: "Immolatus 5*",
             faction: "Abyss",
             probability: 0.006,
-            image: "images/hero/abyss/1322.png"
+            image: "images/hero/abyss/1322.png",
+            order: 3
         },
         /*-------------------------------------------------------------------------------------------------------------
             LIGHT
@@ -687,77 +817,92 @@
             name: "Shards Light 4*",
             faction: "Light",
             probability: 0.20,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 6
         }, {
             name: "Shards 5*",
             faction: "Light",
             probability: 0.14,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 5
         }, {
             name: "Disciple 4*",
             faction: "Light",
             probability: 0.047,
-            image: "images/hero/light_dark/0791.png"
+            image: "images/hero/light_dark/0791.png",
+            order: 4
         }, {
             name: "Fegan 4*",
             faction: "Light",
             probability: 0.047,
-            image: "images/hero/light_dark/0801.png"
+            image: "images/hero/light_dark/0801.png",
+            order: 4
         }, {
             name: "Divine Spirit 4*",
             faction: "Light",
             probability: 0.047,
-            image: "images/hero/light_dark/1371.png"
+            image: "images/hero/light_dark/1371.png",
+            order: 4
         }, {
             name: "Gerke",
             faction: "Light",
             probability: 0.00133,
-            image: "images/hero/light_dark/1241.png"
+            image: "images/hero/light_dark/1241.png",
+            order: 2
         }, {
             name: "Asmodel",
             faction: "Light",
             probability: 0.00134,
-            image: "images/hero/light_dark/1251.png"
+            image: "images/hero/light_dark/1251.png",
+            order: 2
         }, {
             name: "Michelle",
             faction: "Light",
             probability: 0.00133,
-            image: "images/hero/light_dark/1261.png"
+            image: "images/hero/light_dark/1261.png",
+            order: 2
         }, {
             name: "Faith Blade",
             faction: "Light",
             probability: 0.00022,
-            image: "images/hero/light_dark/1361.png"
+            image: "images/hero/light_dark/1361.png",
+            order: 1
         }, {
             name: "Belrain",
             faction: "Light",
             probability: 0.00022,
-            image: "images/hero/light_dark/1401.png"
+            image: "images/hero/light_dark/1401.png",
+            order: 1
         }, {
             name: "Aida",
             faction: "Light",
             probability: 0.00022,
-            image: "images/hero/light_dark/1531.png"
+            image: "images/hero/light_dark/1531.png",
+            order: 1
         }, {
             name: "Tara",
             faction: "Light",
             probability: 0.00023,
-            image: "images/hero/light_dark/1623.png"
+            image: "images/hero/light_dark/1623.png",
+            order: 1
         }, {
             name: "Disciple 5*",
             faction: "Light",
             probability: 0.005,
-            image: "images/hero/light_dark/0792.png"
+            image: "images/hero/light_dark/0792.png",
+            order: 3
         }, {
             name: "Fegan 5*",
             faction: "Light",
             probability: 0.005,
-            image: "images/hero/light_dark/0802.png"
+            image: "images/hero/light_dark/0802.png",
+            order: 3
         }, {
             name: "Divine Spirit 5*",
             faction: "Light",
             probability: 0.005,
-            image: "images/hero/light_dark/1372.png"
+            image: "images/hero/light_dark/1372.png",
+            order: 3
         },
         /*-------------------------------------------------------------------------------------------------------------
             DARK
@@ -766,82 +911,98 @@
             name: "Shards 5*",
             faction: "Dark",
             probability: 0.14,
-            image: "images/hero/10011.png"
+            image: "images/hero/10011.png",
+            order: 5
         }, {
             name: "Shards Dark 4*",
             faction: "Dark",
             probability: 0.20,
-            image: "images/hero/10021.png"
+            image: "images/hero/10021.png",
+            order: 6
         }, {
             name: "Darkness Fanella 4*",
             faction: "Dark",
             probability: 0.046,
-            image: "images/hero/light_dark/0771.png"
+            image: "images/hero/light_dark/0771.png",
+            order: 4
         }, {
             name: "Logan 4*",
             faction: "Dark",
             probability: 0.046,
-            image: "images/hero/light_dark/0781.png"
+            image: "images/hero/light_dark/0781.png",
+            order: 4
         }, {
             name: "Dark Spirit 4*",
             faction: "Dark",
             probability: 0.047,
-            image: "images/hero/light_dark/1381.png"
+            image: "images/hero/light_dark/1381.png",
+            order: 4
         }, {
             name: "Dark Arthindol",
             faction: "Dark",
             probability: 0.00134,
-            image: "images/hero/light_dark/1221.png"
+            image: "images/hero/light_dark/1221.png",
+            order: 2
         }, {
             name: "Amuvor",
             faction: "Dark",
             probability: 0.00022,
-            image: "images/hero/light_dark/1231.png"
+            image: "images/hero/light_dark/1231.png",
+            order: 2
         }, {
             name: "Sleepless",
             faction: "Dark",
             probability: 0.00133,
-            image: "images/hero/light_dark/1351.png"
+            image: "images/hero/light_dark/1351.png",
+            order: 2
         }, {
             name: "Das Moge",
             faction: "Dark",
             probability: 0.00133,
-            image: "images/hero/light_dark/1391.png"
+            image: "images/hero/light_dark/1391.png",
+            order: 2
         }, {
             name: "Mihm",
             faction: "Dark",
             probability: 0.00022,
-            image: "images/hero/light_dark/1441.png"
+            image: "images/hero/light_dark/1441.png",
+            order: 1
         }, {
             name: "Aspen",
             faction: "Dark",
             probability: 0.00022,
-            image: "images/hero/light_dark/1521.png"
+            image: "images/hero/light_dark/1521.png",
+            order: 1
         }, {
             name: "Amen-Ra",
             faction: "Dark",
             probability: 0.00022,
-            image: "images/hero/light_dark/1561.png"
+            image: "images/hero/light_dark/1561.png",
+            order: 1
         }, {
             name: "Carrie",
             faction: "Dark",
             probability: 0.00023,
-            image: "images/hero/light_dark/1633.png"
+            image: "images/hero/light_dark/1633.png",
+            order: 1
         }, {
 			name: "Darkness Fanella 5*",
             faction: "Dark",
             probability: 0.005,
-            image: "images/hero/light_dark/0772.png"
+            image: "images/hero/light_dark/0772.png",
+            order: 3
         }, {
             name: "Logan 5*",
             faction: "Dark",
             probability: 0.005,
-            image: "images/hero/light_dark/0782.png"
+            image: "images/hero/light_dark/0782.png",
+            order: 3
         }, {
             name: "Dark Spirit 5*",
             faction: "Dark",
             probability: 0.005,
-            image: "images/hero/light_dark/1382.png"
+            image: "images/hero/light_dark/1382.png",
+            order: 3
         },
 
         // {
@@ -849,11 +1010,20 @@
         //     faction: "",
         //     probability: 0,
         //     image: ""
+        //     order: 0
+        /*
+         * Order: 0 - The King
+         * Order: 1 - Elite 5* Heroes
+         * Order: 2 - 5* Natural Heroes
+         * Order: 3 - 5* Non-natural Heroes
+         * Order: 4 - 4* Heroes
+         * Order: 5 - 5* Faction Shards
+         * Order: 6 - 4* Faction Shards
+        */
         // },
     ];
 
     function countUniques(array) {
-        array = array.sort();
         var uniques = [];
         for (i = 0; i < array.length; i++) {
             if (!uniques.includes(array[i])) {
@@ -879,19 +1049,30 @@
     }
 
     function simulate(faction) {
-        var hero = "";
+        var hero = null;
         var chance = Math.random();
         var total = 0;
-        for (i of heros) {
-            if (i.faction == faction || i.faction.includes("Light") || i.faction.includes("Dark")) {
-                total += i.probability;
-                if (chance <= total) {
-                    hero = i.name;
-                    break;
-                }
+
+        // Filter heroes by faction
+        var factionHeros = heros.filter(function (h) {
+            return h.faction == faction || h.faction.includes("Light") || h.faction.includes("Dark");
+        });
+        
+        for (i of factionHeros) {            
+            total += i.probability;
+            if (chance <= total) {
+                hero = { name: i.name, order: i.order };
+                break;
             }
         }
         return hero;
+    }
+
+    function sortHeroResults(heroResults) {
+        var results = [];
+        heroResults = heroResults.sort((a, b) => (a.order > b.order) ? 1 : -1)
+        heroResults.forEach(hr => results.push(hr.name));
+        return results;
     }
 
     function simulateShards(data) {
@@ -950,7 +1131,7 @@
         return data;
     }
 
-    function simulateBlessings(amount){
+    function simulateBlessings(amount) {
         function randomInt(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
@@ -960,7 +1141,7 @@
         function sim(count, min, max) {
             var total = 0;
             for (var i = 0; i < count; i++) {
-                total +=randomInt(min, max);
+                total += randomInt(min, max);
             }
             return total;
         }
@@ -1012,9 +1193,10 @@
                 return name.includes("Dark");
             }
             var HTML = "";
+
             HTML = '<div class="avatar mx-auto"><img src="' + img + '" alt="' + name + '" title="' + name +
                 '" class="img-avatar">';
-            if(name.includes("Shards")){
+            if (name.includes("Shards")) {
                 HTML += '<img src="images/hero/bag_piece.png" class="img-piece">';
             }
             if (!getShards(name)) {
@@ -1044,17 +1226,18 @@
         HTML =
             "<div class=\"dialog-container\"><div class=\"dialog-title\">Rewards</div><div class=\"results\"><div class=\"row no-gutters\">";
         results.forEach(function (i) {
-            if(i.name == "Prophet's Blessing"){
+            if (i.name == "Prophet's Blessing") {
                 HTML += ("<div class=\"col-6 col-md-2\">" + '<div class="avatar mx-auto"><img src="images/2201.png"alt="Prophets Blessing" title="Prophets Blessing" class="img-avatar"></div>' +
                     "<i class=\"hero-amount\">" + i.count + "x </i><i class=\"hero-x\">" + cleanName(i.name) +
-                        "</i></div>");
-            }else{
-            HTML += ("<div class=\"col-6 col-md-2\">" + genImg(getImage(i.name), i.name) +
-                "<i class=\"hero-amount\">" + i.count + "x </i><i class=\"hero-x\">" + cleanName(i.name) +
-                "</i></div>");
+                    "</i></div>");
+            } else {
+                HTML += ("<div class=\"col-6 col-md-2\">" + genImg(getImage(i.name), i.name) +
+                    "<i class=\"hero-amount\">" + i.count + "x </i><i class=\"hero-x\">" + cleanName(i.name) +
+                    "</i></div>");
             }
         });
         HTML += '</div></div></div>';
+
         return HTML;
     }
 
@@ -1071,21 +1254,24 @@
             e.stopImmediatePropagation();
             $("#error").html("");
             var faction = $(this).attr("data-faction");
-            var results = [];
+
+
+            var heroResults = [];
             var amount = $("#po-amount").val();
             if (amount < 1 || amount == "") {
                 $("#error").html(
                     '<div class="alert alert-danger alert-dismissible fade show" role="alert">You must enter an amount of prophet orbs to simulate!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
-                    );
+                );
                 return;
             }
             for (var j = 0; j < amount; j++) {
-                results.push(simulate(faction));
+                heroResults.push(simulate(faction));
             }
+
+            var results = sortHeroResults(heroResults);
             results = countUniques(results);
             results = simulateShards(results);
-            results.push({name: "Prophet's Blessing", count: simulateBlessings(amount)});
-            console.log(results);
+            results.push({ name: "Prophet's Blessing", count: simulateBlessings(amount) });
             $("#results").html(genHTML(results));
             $("#speech-text").html("Ready to Spend<br>More Money?");
             console.log("Finished Simulating");
@@ -1095,6 +1281,7 @@
 </script>
 
 <style type="text/css">
+
     @font-face {
         font-family: "Idle";
         src: url("webfonts/Poetsenone-regular.ttf") format('truetype'), url("webfonts/Poetsenone-regular.woff") format('woff');
@@ -1154,9 +1341,9 @@
         border-image-width: 10px;
     }
 
-    .btn:hover {
-        border-image-source: url(images/casino_shop_btn_highlight.png);
-    }
+        .btn:hover {
+            border-image-source: url(images/casino_shop_btn_highlight.png);
+        }
 
     .display-1 {
         border-image-source: url(images/transchage_flower2.png);
@@ -1251,9 +1438,9 @@
         padding: 2rem 1rem 1.5rem 1rem;
     }
 
-    .results .row {
-        background-color: #bd916e;
-    }
+        .results .row {
+            background-color: #bd916e;
+        }
 
     .hero-x {
         color: #fff;
@@ -1358,22 +1545,22 @@
         width: 50px;
     }
 
-    .btn-close:hover {
-        cursor: pointer;
-    }
+        .btn-close:hover {
+            cursor: pointer;
+        }
 
     .credits a {
         color: #000;
     }
 
-    .credits a:hover,
-    .credits a:focus,
-    .credits a:active {
-        color: #FFF;
-        -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
-        filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
-        text-decoration: none;
-    }
+        .credits a:hover,
+        .credits a:focus,
+        .credits a:active {
+            color: #FFF;
+            -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+            filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+            text-decoration: none;
+        }
 </style>
 
 <body>
@@ -1388,13 +1575,16 @@
             <div class="small">Updated by:</div>
             <div class="text-center">Renork</div>
             <div class="small">Images &amp; Data:</div>
-            <div class="text-center"><a
-                    href="https://docs.google.com/spreadsheets/d/1uZvi69blL0zE-bN7PxE3sq1prhIncjQQ9LzpWA9ae6M"
-                    target="_blank">Samogot</a></div>
+            <div class="text-center">
+                <a href="https://docs.google.com/spreadsheets/d/1uZvi69blL0zE-bN7PxE3sq1prhIncjQQ9LzpWA9ae6M"
+                   target="_blank">Samogot</a>
+            </div>
             <div class="small">Idle Heroes by DH Games:</div>
-            <a href="http://www.droidhang.com" target="_blank"><img src="images/bg1_part2.png" alt=""
-                    class="img-fluid"></a>
-            <div class="text-center text-muted small">Updated: 3/24/2020</div>
+            <a href="http://www.droidhang.com" target="_blank">
+                <img src="images/bg1_part2.png" alt=""
+                     class="img-fluid">
+            </a>
+            <div class="text-center text-muted small">Updated: 11/28/2019</div>
         </div>
     </div>
     <div class="container">
@@ -1410,23 +1600,39 @@
                                     <div class="po-container">
                                         <img src="images/2101.png" class="img-po">
                                         <input id="po-amount" type="number" min="0" class="form-control form-po"
-                                            placeholder="Amount">
+                                               placeholder="Amount">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6 offset-md-1 col-md-2"><button class="btn btn-faction"
-                                        data-faction="Forest"><img src="images/forest.png" alt=""
-                                            class="img-faction"><span>Forest</span></button></div>
-                                <div class="col-6 col-md-2"><button class="btn btn-faction" data-faction="Fortress"><img
-                                            src="images/castle2.png" alt="" class="img-faction">Fortress</button></div>
-                                <div class="col-6 col-md-2"><button class="btn btn-faction" data-faction="Shadow"><img
-                                            src="images/dim.png" alt="" class="img-faction">Shadow</button></div>
-                                <div class="col-6 col-md-2"><button class="btn btn-faction" data-faction="Abyss"><img
-                                            src="images/abyss.png" alt="" class="img-faction">Abyss</button></div>
-                                <div class="offset-3 col-6 offset-md-0 col-md-2" data-faction="Light/Dark"><button
-                                        class="btn btn-faction"><img src="images/holyblack.png" alt=""
-                                            class="img-faction">Light/Dark</button></div>
+                                <div class="col-6 offset-md-1 col-md-2">
+                                    <button class="btn btn-faction"
+                                            data-faction="Forest">
+                                        <img src="images/forest.png" alt=""
+                                             class="img-faction"><span>Forest</span>
+                                    </button>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <button class="btn btn-faction" data-faction="Fortress">
+                                        <img src="images/castle2.png" alt="" class="img-faction">Fortress
+                                    </button>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <button class="btn btn-faction" data-faction="Shadow">
+                                        <img src="images/dim.png" alt="" class="img-faction">Shadow
+                                    </button>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <button class="btn btn-faction" data-faction="Abyss">
+                                        <img src="images/abyss.png" alt="" class="img-faction">Abyss
+                                    </button>
+                                </div>
+                                <div class="offset-3 col-6 offset-md-0 col-md-2" data-faction="Light/Dark">
+                                    <button class="btn btn-faction">
+                                        <img src="images/holyblack.png" alt=""
+                                             class="img-faction">Light/Dark
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
